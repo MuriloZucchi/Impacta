@@ -79,6 +79,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           name: EnderecoWidget.routeName,
           path: EnderecoWidget.routePath,
           builder: (context, params) => EnderecoWidget(),
+        ),
+        FFRoute(
+          name: CardapioWidget.routeName,
+          path: CardapioWidget.routePath,
+          builder: (context, params) => CardapioWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );
